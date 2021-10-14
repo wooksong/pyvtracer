@@ -1,0 +1,17 @@
+[package]
+name = "pyvtracer"
+version = "0.1.0"
+author = ["Wook Song <wook16.song@samsung.com>"]
+edition = "2018"
+
+[lib]
+name = "pyvtracer"
+crate-type = ["cdylib"]
+
+[dependencies]
+vtracer = "0.4.0"
+visioncortex = "0.6.0"
+
+[dependencies.pyo3]
+version = "0.14.5"
+features = ["extension-module"]
