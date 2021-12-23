@@ -10,13 +10,12 @@ class BinaryDistribution(_Distribution):
 
 setup(
     name="pyvtracer",
-    version="0.1.0",
+    version="0.1.1",
     author="Wook Song",
     author_email="wook16.song@samsung.com",
     maintainer="Wook Song",
     maintainer_email="wook16.song@samsung.com",
-    rust_extensions=[RustExtension(
-        "pyvtracer.pyvtracer", binding=Binding.PyO3)],
+    rust_extensions=[RustExtension("pyvtracer.pyvtracer", binding=Binding.PyO3)],
     packages=find_packages(),
     zip_safe=False,
     distclass=BinaryDistribution,

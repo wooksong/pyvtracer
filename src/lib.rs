@@ -206,7 +206,7 @@ impl Vtracer {
             filter_speckle: self.conf.filter_speckle,
             color_precision: self.conf.color_precision,
             layer_difference: self.conf.layer_difference,
-            mode: PathSimplifyMode::Spline,
+            mode: self.conf.mode,
             corner_threshold: self.conf.corner_threshold,
             length_threshold: self.conf.length_threshold,
             splice_threshold: self.conf.splice_threshold,
